@@ -13,7 +13,6 @@ namespace LogicaCamionesREST
     {
         private static Logica instance = null;
         private Logica() { }
-
         public static Logica Instance
         {
             get
@@ -35,6 +34,17 @@ namespace LogicaCamionesREST
             GuardarCamiones();
 
             return nuevoCamion;
+        }
+        public List<Camion> obtenerCamiones(string marca)
+        {
+            ActualizarCamiones();
+
+            if (marca != "")
+            {
+                return Camiones.Where(x => x.Marca.ToLower() == marca.ToLower()).ToList();
+            }
+
+            return Camiones;
         }
         public bool BajaCamion(int numeroCamionEliminar)
         {
@@ -72,14 +82,12 @@ namespace LogicaCamionesREST
         }
         public void ActualizarCamiones()
         {
-            if (Camiones != null)
-            {
-                this.Camiones = persistencia.LeerCamiones();
-            }
-            else
+            Camiones = persistencia.LeerCamiones();
+
+            if (Camiones == null)
             {
                 Camiones = new List<Camion>();
-            } 
+            }
         }
         public void ActualizarPaquetes()
         {
@@ -100,8 +108,24 @@ namespace LogicaCamionesREST
         {
             persistencia.GuardarCamiones(Camiones);
         }
+        public Camion ModificarCamion(Camion camionModificando)
+        {
+            ActualizarCamiones();
+            Camion modificar = Camiones.FirstOrDefault(x => x.Numero == camionModificando.Numero);
 
+            if (modificar != null) modificar = IntercambiarValores(modificar, camionModificando);
+            GuardarCamiones();
+            return modificar;
+        }
+        public Camion IntercambiarValores(Camion modificar,Camion modificando)
+        {
+            modificar.Marca = modificando.Marca;
+            modificar.FechaHoraLlegada = modificando.FechaHoraLlegada;
+            modificar.FechaHoraSalida = modificando.FechaHoraSalida;
+            modificar.PesoMaximo = modificando.PesoMaximo;
 
+            return modificar;
+        }
     }
 
 
