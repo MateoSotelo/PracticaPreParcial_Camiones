@@ -1,0 +1,6 @@
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\EntidadesREST\bin\Debug\EntidadesREST.dll
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\EntidadesREST\bin\Debug\EntidadesREST.pdb
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\EntidadesREST\obj\Debug\EntidadesREST.csproj.AssemblyReference.cache
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\EntidadesREST\obj\Debug\EntidadesREST.csproj.CoreCompileInputs.cache
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\EntidadesREST\obj\Debug\EntidadesREST.dll
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\EntidadesREST\obj\Debug\EntidadesREST.pdb

@@ -1,0 +1,11 @@
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\PersistenciaREST\bin\Debug\PersistenciaREST.dll
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\PersistenciaREST\bin\Debug\PersistenciaREST.pdb
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\PersistenciaREST\bin\Debug\EntidadesREST.dll
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\PersistenciaREST\bin\Debug\Newtonsoft.Json.dll
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\PersistenciaREST\bin\Debug\EntidadesREST.pdb
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\PersistenciaREST\bin\Debug\Newtonsoft.Json.xml
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\PersistenciaREST\obj\Debug\PersistenciaREST.csproj.AssemblyReference.cache
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\PersistenciaREST\obj\Debug\PersistenciaREST.csproj.CoreCompileInputs.cache
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\PersistenciaREST\obj\Debug\PersistenciaREST.csproj.CopyComplete
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\PersistenciaREST\obj\Debug\PersistenciaREST.dll
+C:\Users\msote\OneDrive\Documentos\Repositorios\PracticaPreParcial_Camiones\PracticaPreParcial2\PersistenciaREST\obj\Debug\PersistenciaREST.pdb
