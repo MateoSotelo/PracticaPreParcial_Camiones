@@ -10,9 +10,10 @@ using EntidadesREST;
 
 namespace ServicioCamionesREST.Controllers
 {
-    [RoutePrefix("api/Paquete")]
+    [RoutePrefix("api/Paquetes")]
     public class PaqueteController : ApiController
     {
+        [Route("{numero}")]
         public IHttpActionResult Get(int numero)
         {
             return Ok(ConvertirPaquete(Logica.Instance.BuscarPaquete(numero)));
