@@ -27,7 +27,14 @@ namespace ServicioCamionesREST.Controllers
         [Route("{numero}")]
         public IHttpActionResult Get(int numero)
         {
-            return Ok(ConvertirCamion(Logica.Instance.BuscarCamion(numero)));
+            CamionServicio camion = ConvertirCamion(Logica.Instance.BuscarCamion(numero));
+
+            if (camion != null)
+            {
+                return Ok(camion);
+            }
+
+            return BadRequest("No se encontro el camion buscado");
         }
         [Route("nuevoCamion")]
         public IHttpActionResult Post([FromBody] CamionServicio nuevoCamion)
