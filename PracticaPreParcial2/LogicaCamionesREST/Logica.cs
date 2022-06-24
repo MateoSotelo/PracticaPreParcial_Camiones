@@ -35,16 +35,22 @@ namespace LogicaCamionesREST
 
             return nuevoCamion;
         }
-        public List<Camion> obtenerCamiones(string marca)
+        public List<Camion> obtenerCamiones(string marca,int pesoMaximo)
         {
             ActualizarCamiones();
+            List<Camion> listaFiltrada = Camiones;
 
             if (marca != "")
             {
-                return Camiones.Where(x => x.Marca.ToLower() == marca.ToLower()).ToList();
+                listaFiltrada = Camiones.Where(x => x.Marca.ToLower() == marca.ToLower()).ToList();
             }
 
-            return Camiones;
+            if (pesoMaximo != 0)
+            {
+                listaFiltrada = listaFiltrada.Where(x => x.PesoMaximo < pesoMaximo).ToList();
+            }
+
+            return listaFiltrada;
         }
         public bool BajaCamion(int numeroCamionEliminar)
         {

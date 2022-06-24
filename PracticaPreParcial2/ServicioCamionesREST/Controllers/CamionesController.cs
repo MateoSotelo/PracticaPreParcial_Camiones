@@ -13,9 +13,9 @@ namespace ServicioCamionesREST.Controllers
     [RoutePrefix("api/Camiones")]
     public class CamionesController : ApiController
     {
-        public IHttpActionResult Get(string marca = "")
+        public IHttpActionResult Get(string marca = "",int pesoMaximo = 0)
         {
-            List<CamionServicio> lista = ConvertirLista(Logica.Instance.obtenerCamiones(marca));
+            List<CamionServicio> lista = ConvertirLista(Logica.Instance.obtenerCamiones(marca,pesoMaximo));
 
             if (lista.Count != 0)
             {
